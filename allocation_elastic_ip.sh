@@ -1,5 +1,5 @@
 #!/bin/bash
-PROXY_IP1="seu_eslastic_ip1"
+PROXY_IP1="seu_elastic_ip1"
 PROXY_IP2="seu_elastic_ip2"
 VALIDATION_IP=`aws ec2 --region us-east-1 describe-addresses --public-ips $PUBLIC_IP $PROXY_IP1 | grep  AssociationId | cut -d'"' -f2`
 
